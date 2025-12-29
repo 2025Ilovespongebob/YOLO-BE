@@ -33,10 +33,10 @@ pip install -r requirements.txt
 ## 라우터 설명
 main.py: FastAPI 앱 인스턴스 생성 및 라우터(Router) 등록.
 core/: 공통 설정(환경 변수, DB 설정 등), 보안 로직 등.
-routers/ (또는 api/): 엔드포인트 정의 (HTTP 메소드, 경로).
-schemas/ (또는 models/): Pydantic 모델로 데이터 유효성 검사 및 직렬화 담당.
+routers/: 엔드포인트 정의 (HTTP 메소드, 경로).
+schemas/: Pydantic 모델로 데이터 유효성 검사 및 직렬화 담당.
 services/: 비즈니스 로직 구현. 라우터와 데이터베이스 사이의 중개 역할.
-repositories/ (또는 db/): 데이터베이스 접근 및 CRUD 작업.
+repositories/: 데이터베이스 접근 및 CRUD 작업.
 domain/: 핵심 비즈니스 규칙 및 엔티티(Entity).
 
 ## 한 브랜치에서 개발 끝나고 다른 브랜치에서 개발 할 때,
